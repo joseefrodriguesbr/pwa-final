@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Variável CSS para definir a largura máxima unificada */
+:root {
+    --max-content-width: 600px; 
+}
+
+/* Aplica a largura máxima unificada */
+form, ul {
+  max-width: var(--max-content-width); 
+  margin: 20px auto;
+}
+
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  border: none; 
+}
+
+.mdl-textfield {
+    width: 90%; 
+}
+
+.input-date-time-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.input-date-time-container label {
+    font-size: 12px;
+    color: #616161;
+    margin-bottom: 5px;
+}
+
+.input-date-time-container input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+/* === ESTILOS DA LISTAGEM DE AGENDAMENTOS === */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li.agendamento-card {
+  padding: 15px; 
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  border-bottom: none; 
+  transition: all 0.2s ease-in-out;
+}
+
+.appointment-details {
+  flex-grow: 1; 
+  text-align: left;
+  padding-right: 15px;
+}
+
+.paciente-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #3f51b5; 
+    font-weight: bold;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.paciente-header i.material-icons {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #3f51b5;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #424242;
+    margin-top: 8px;
+}
+
+.detail-row i.material-icons {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #757575;
+}
+
+.detail-row i.time-icon {
+    margin-left: 15px;
+}
+
+/* Botões de Ação na listagem */
+.action-buttons {
+    display: flex;
+    flex-direction: column; /* Coloca os botões um em cima do outro */
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.edit-icon {
+    color: #00bcd4; /* Cor ciano para Edição */
+}
+
+.delete-icon {
+    color: #ff5252;
+}
+
+/* === ESTILOS DOS DIALOGS === */
+
+/* Estilo unificado para ambos os dialogs */
+#about-dialog, #confirm-dialog {
+    width: 90%; 
+    max-width: 450px; /* Reduz a largura máxima para dialogs */
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+#about-dialog::backdrop, #confirm-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#about-dialog ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    text-align: left;
+}
+
+#about-dialog li {
+    padding: 5px 0;
+    border-bottom: none;
+}
