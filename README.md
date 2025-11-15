@@ -20,7 +20,8 @@ Implementação de uma aplicação PWA com Vanilla JS para cadastro de agendamen
 
 ✅ Controle de versão : O projeto avaliativo deverá ser desenvolvido com o auxílio de um controlador de versão desde o seu início. Para esta atividade foi utilizado o serviço GitHub.
 
-✅ O projeto implantado em um provedor de hospedagem e acessível através do GitHub Pages: https://joseefrodriguesbr.github.io/pwa-final/ 
+✅ O projeto implantado em um provedor de hospedagem e acessível através do GitHub Pages: 
+https://joseefrodriguesbr.github.io/pwa-final/ 
 
 ✅ HTML5 Cache API O projeto faz uso do Cache Storage para o armazenamento de arquivos estáticos.
 
